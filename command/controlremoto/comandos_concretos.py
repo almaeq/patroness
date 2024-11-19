@@ -15,10 +15,10 @@ class ComandoApagarTelevision(Comando):
         self.television = television
 
     def ejecutar(self):
-        self.television.deshacer()
+        self.television.ejecutar()
 
     def deshacer(self):
-        self.television.ejecutar()
+        self.television.deshacer()
 
 class ComandoEncenderLampara(Comando):
     def __init__(self, lampara):
